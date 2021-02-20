@@ -1,0 +1,51 @@
+--Made by 9Illusion#0001
+local player = game:GetService('Players').LocalPlayer;
+local RService = game:GetService('RunService');
+local TService = game:GetService('TweenService');
+--
+local IManager = game:GetService("VirtualInputManager")
+local VUser = game:GetService('VirtualUser')
+local MouseClick = false
+--
+local Offset = {
+    Angles = CFrame.Angles(0,0,0); 
+    Offsets = CFrame.new(0,0,4)
+};
+local Toggle = true
+    
+game:GetService('RunService').Stepped:Connect(function()
+    if Toggle then 
+        pcall(function()
+            player.Character.Humanoid:ChangeState(11)
+        end);
+    end 
+end);
+local function CreateTween(part)
+    local newTween = TService:Create(player.Character:WaitForChild('HumanoidRootPart'), TweenInfo.new(player:DistanceFromCharacter(part.Position) / 1000, Enum.EasingStyle.Linear), {CFrame = part.CFrame * Offset.Angles * Offset.Offsets});
+    newTween:Play();
+    newTween.Completed:wait() 
+end;
+
+spawn(function()
+    while wait() do 
+        if Toggle then
+            for i,v in pairs(workspace.NPCs:GetChildren()) do --Line 33 is to change the person u wanna farm
+                if v.Name:lower() == "midnight" and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid') and v.Humanoid.Health > 0 then 
+                    repeat wait()
+                        pcall(function() 
+                            CreateTween(v.HumanoidRootPart)
+                            if MouseClick then 
+                                VUser:Button1Down(Vector2.new(math.huge,math.huge));
+                                VUser:Button1Up(Vector2.new(math.huge,math.huge));
+                            elseif Remote then 
+                                FireServer()
+                            else --Line 43 to change the moves
+                                IManager:SendKeyEvent(true, "E", false, game);
+                            end 
+                        end)
+                    until not v or not v:FindFirstChild('HumanoidRootPart') or not v:FindFirstChild('Humanoid') or v.Humanoid.Health <= 0 
+                end 
+            end
+        end 
+    end 
+end)

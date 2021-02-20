@@ -1,7 +1,7 @@
 while true do
 
 local args = {
-    [1] = game:GetService("Players").LocalPlayer.leaderstats["\240\159\140\128Rebirth"] -- if you don't want to to auto rebirth then delete line 3-5
+    [1] = game:GetService("Players").LocalPlayer.leaderstats["\240\159\140\128Rebirth"] -- if you don't want to do auto rebirth then delete line 3-5
 }
 
 game:GetService("ReplicatedStorage").RemoteEvents.Rebirth:FireServer(unpack(args))

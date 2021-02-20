@@ -1,4 +1,4 @@
---Made by 9Illusion#0001
+--Made by +𝙎𝙝𝙤#0001
 local player = game:GetService('Players').LocalPlayer;
 local RService = game:GetService('RunService');
 local TService = game:GetService('TweenService');
@@ -29,7 +29,7 @@ end;
 spawn(function()
     while wait() do 
         if Toggle then
-            for i,v in pairs(workspace.NPCs:GetChildren()) do --Line 33 is to change the person u wanna farm
+            for i,v in pairs(workspace.NPCs:GetChildren()) do --Line 33 is to change the person u wanna farm. It's better to rejoin then change npc you want to farm
                 if v.Name:lower() == "midnight" and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid') and v.Humanoid.Health > 0 then 
                     repeat wait()
                         pcall(function() 

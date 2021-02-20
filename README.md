@@ -1,26 +1,2 @@
 # RukaisScripts
-My Scripts
---Made By +𝙎𝙝𝙤#0001
---ik its trash but dont hate
-while true do
-local args = {
-    [1] = "Powers.Punch"
-}
-
-game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
-
-
-local args = {
-    [1] = "Powers.Pressup"
-}
-
-game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
-
-local args = {
-    [1] = "Jumping"
-}
-
-game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
-
-wait()
-end
+All these Scripts are made by me

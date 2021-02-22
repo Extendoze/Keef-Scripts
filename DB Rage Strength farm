@@ -1,0 +1,11 @@
+while true do
+
+game:GetService("ReplicatedStorage").Remotes.Training.Combat:InvokeServer()
+
+
+game:GetService("ReplicatedStorage").Remotes.Training.Combat:InvokeServer()
+
+game:GetService("ReplicatedStorage").Remotes.Training.Combat:InvokeServer()
+
+game:GetService("ReplicatedStorage").Remotes.Training.Combat:InvokeServer()
+end

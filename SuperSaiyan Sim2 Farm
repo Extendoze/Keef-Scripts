@@ -1,0 +1,63 @@
+while true do
+
+local ohString1 = "Combat"
+local ohBoolean2 = true
+local ohCFrame3 = CFrame.new(1758.25281, 579.271423, 1297.71448, 0.707136095, 0, 0.707077444, 0, 1, 0, -0.707077503, 0, 0.707136035)
+local ohCFrame4 = CFrame.new(1749.41431, 577.771423, 1288.87524, 0.707134247, 0, 0.707079291, 0, 1, 0, -0.707079291, 0, 0.707134247)
+local ohCFrame5 = CFrame.new(1647.54651, 604.666199, 1263.18262, 0.297798246, 0.204229072, 0.932527125, -3.7252903e-09, 0.976847887, -0.213935569, -0.954628885, 0.063709639, 0.290903538)
+
+game:GetService("ReplicatedStorage").Remotes.SkillRemote:FireServer(ohString1, ohBoolean2, ohCFrame3, ohCFrame4, ohCFrame5)
+
+wait()
+
+local ohString1 = "Combat"
+local ohBoolean2 = true
+local ohCFrame3 = CFrame.new(1758.25281, 579.271423, 1297.71448, 0.707136095, 0, 0.707077444, 0, 1, 0, -0.707077503, 0, 0.707136035)
+local ohCFrame4 = CFrame.new(1749.41431, 577.771423, 1288.87524, 0.707134247, 0, 0.707079291, 0, 1, 0, -0.707079291, 0, 0.707134247)
+
+wait()
+
+local ohString1 = "Combat"
+local ohBoolean2 = true
+local ohCFrame3 = CFrame.new(1758.25281, 579.271423, 1297.71448, 0.707136095, 0, 0.707077444, 0, 1, 0, -0.707077503, 0, 0.707136035)
+local ohCFrame4 = CFrame.new(1749.41431, 577.771423, 1288.87524, 0.707134247, 0, 0.707079291, 0, 1, 0, -0.707079291, 0, 0.707134247)
+local ohCFrame5 = CFrame.new(1755.11389, 584.560486, 1264.77502, 0.995494902, 0.0149650648, 0.0936264768, -0, 0.98746562, -0.15783447, -0.0948149338, 0.157123417, 0.983016968)
+
+game:GetService("ReplicatedStorage").Remotes.SkillRemote:FireServer(ohString1, ohBoolean2, ohCFrame3, ohCFrame4, ohCFrame5)
+local ohCFrame5 = CFrame.new(1712.4259, 574.771545, 1264.74316, 0.583991766, -0.0645077974, 0.809192419, -0, 0.996837616, 0.079466626, -0.811759651, -0.046407856, 0.582144916)
+
+game:GetService("ReplicatedStorage").Remotes.SkillRemote:FireServer(ohString1, ohBoolean2, ohCFrame3, ohCFrame4, ohCFrame5)
+
+wait()
+
+local ohString1 = "Combat"
+local ohBoolean2 = true
+local ohCFrame3 = CFrame.new(1758.25281, 579.271423, 1297.71448, 0.707136095, 0, 0.707077444, 0, 1, 0, -0.707077503, 0, 0.707136035)
+local ohCFrame4 = CFrame.new(1749.41431, 577.771423, 1288.87524, 0.707134247, 0, 0.707079291, 0, 1, 0, -0.707079291, 0, 0.707134247)
+local ohCFrame5 = CFrame.new(1747.1499, 574.771362, 1276.01257, 0.890268087, -0.0826693624, 0.447871178, -0, 0.983387947, 0.181516603, -0.455436915, -0.161598444, 0.875478864)
+
+game:GetService("ReplicatedStorage").Remotes.SkillRemote:FireServer(ohString1, ohBoolean2, ohCFrame3, ohCFrame4, ohCFrame5)
+
+wait()
+
+local ohString1 = "Combat"
+local ohBoolean2 = true
+local ohCFrame3 = CFrame.new(1758.25281, 579.271423, 1297.71448, 0.707136095, 0, 0.707077444, 0, 1, 0, -0.707077503, 0, 0.707136035)
+local ohCFrame4 = CFrame.new(1749.41431, 577.771423, 1288.87524, 0.707134247, 0, 0.707079291, 0, 1, 0, -0.707079291, 0, 0.707134247)
+local ohCFrame5 = CFrame.new(1747.1499, 574.771362, 1276.01257, 0.890268087, -0.0826693624, 0.447871178, -0, 0.983387947, 0.181516603, -0.455436915, -0.161598444, 0.875478864)
+
+game:GetService("ReplicatedStorage").Remotes.SkillRemote:FireServer(ohString1, ohBoolean2, ohCFrame3, ohCFrame4, ohCFrame5)
+
+wait()
+
+local ohString1 = "Combat"
+local ohBoolean2 = true
+local ohCFrame3 = CFrame.new(1758.25281, 579.271423, 1297.71448, 0.707136095, 0, 0.707077444, 0, 1, 0, -0.707077503, 0, 0.707136035)
+local ohCFrame4 = CFrame.new(1749.41431, 577.771423, 1288.87524, 0.707134247, 0, 0.707079291, 0, 1, 0, -0.707079291, 0, 0.707134247)
+local ohCFrame5 = CFrame.new(1747.1499, 574.771362, 1276.01257, 0.890268087, -0.0826693624, 0.447871178, -0, 0.983387947, 0.181516603, -0.455436915, -0.161598444, 0.875478864)
+
+game:GetService("ReplicatedStorage").Remotes.SkillRemote:FireServer(ohString1, ohBoolean2, ohCFrame3, ohCFrame4, ohCFrame5)
+
+wait()
+
+end

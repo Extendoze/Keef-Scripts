@@ -1,11 +1,16 @@
---Made by +𝙎𝙝𝙤#0001
+--Made by Devastation#0002
+wait(2)
+local ohString1 = "EasterSword"
+
+game:GetService("ReplicatedStorage").WeaponShop.Equip:FireServer(ohString1)
+
 local player = game:GetService('Players').LocalPlayer;
 local RService = game:GetService('RunService');
 local TService = game:GetService('TweenService');
 --
 local IManager = game:GetService("VirtualInputManager")
 local VUser = game:GetService('VirtualUser')
-local MouseClick = false
+local MouseClick = true
 --
 local Offset = {
     Angles = CFrame.Angles(0,0,0); 
@@ -30,7 +35,7 @@ spawn(function()
     while wait() do 
         if Toggle then
             for i,v in pairs(workspace.NPCs:GetChildren()) do --Line 33 is to change the person u wanna farm. It's better to rejoin then change npc you want to farm
-                if v.Name:lower() == "midnight" and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid') and v.Humanoid.Health > 0 then 
+                if v.Name:lower() == "gang orca" and v:FindFirstChild('HumanoidRootPart') and v:FindFirstChild('Humanoid') and v.Humanoid.Health > 0 then 
                     repeat wait()
                         pcall(function() 
                             CreateTween(v.HumanoidRootPart)
@@ -47,5 +52,5 @@ spawn(function()
                 end 
             end
         end 
-    end 
+        end 
 end)

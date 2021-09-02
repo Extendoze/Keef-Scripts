@@ -1,0 +1,432 @@
+-- Genocide GUI | Made By Lelouch#0990 & Sho#0006
+-- Version: 3.2
+
+-- Instances:
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "Genocide Gui";
+	Text = "Created by: Shonen#0004 & Jar#0005";
+})
+
+wait(1)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "More features coming soon:";
+	Text = "Sussy baka";
+})
+wait(1)
+
+local ScreenGui = Instance.new("ScreenGui")
+local Test = Instance.new("Frame")
+local XButton = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Script1 = Instance.new("TextButton")
+local Script2 = Instance.new("TextButton")
+local Script3 = Instance.new("TextButton")
+local Script4 = Instance.new("TextButton")
+local Script5 = Instance.new("TextButton")
+local Script6 = Instance.new("TextButton")
+local Script7 = Instance.new("TextButton")
+local Script8 = Instance.new("TextButton")
+local Script9 = Instance.new("TextButton")
+local Script10 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Test.Name = "Test"
+Test.Parent = ScreenGui
+Test.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Test.Position = UDim2.new(0.349845201, 0, 0.297297299, 0)
+Test.Size = UDim2.new(0, 437, 0, 238)
+Test.Visible = false
+
+XButton.Name = "X Button"
+XButton.Parent = Test
+XButton.BackgroundColor3 = Color3.fromRGB(170, 85, 255)
+XButton.Position = UDim2.new(0.908466816, 0, 0.0924369767, 0)
+XButton.Size = UDim2.new(0, 40, 0, 39)
+XButton.Font = Enum.Font.SourceSans
+XButton.Text = "x"
+XButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+XButton.TextSize = 40.000
+XButton.TextStrokeTransparency = 0.000
+
+TextLabel.Parent = XButton
+TextLabel.BackgroundColor3 = Color3.fromRGB(170, 85, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.Position = UDim2.new(-9.92500019, 0, -0.56410259, 0)
+TextLabel.Size = UDim2.new(0, 437, 0, 22)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Genocide GUI | Made By Shonen#0004 & Jar#0005"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+Script1.Name = "Script1"
+Script1.Parent = Test
+Script1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Script1.BorderColor3 = Color3.fromRGB(170, 0, 255)
+Script1.Position = UDim2.new(0, 0, 0.285714298, 0)
+Script1.Size = UDim2.new(0, 84, 0, 42)
+Script1.Font = Enum.Font.SourceSans
+Script1.Text = "godmode (earth)"
+Script1.TextColor3 = Color3.fromRGB(170, 85, 255)
+Script1.TextSize = 14.000
+Script1.MouseButton1Down:connect(function()
+	_G.GodMode = true
+
+	spawn(function()
+		repeat game:GetService("RunService").RenderStepped:wait()     
+			firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game:GetService("Workspace").Touchy.Part,0)
+			firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game:GetService("Workspace").Touchy.Part,1)
+		until _G.GodMode == false
+	end)
+
+	spawn(function()
+		repeat game:GetService("RunService").RenderStepped:wait()     
+			game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Popup").Enabled = false
+		until _G.GodMode == false
+	end)
+end)
+
+Script2.Name = "Script2"
+Script2.Parent = Test
+Script2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Script2.BorderColor3 = Color3.fromRGB(170, 85, 255)
+Script2.Position = UDim2.new(0.212814644, 0, 0.285714298, 0)
+Script2.Size = UDim2.new(0, 85, 0, 42)
+Script2.Font = Enum.Font.SourceSans
+Script2.Text = "No Slow"
+Script2.TextColor3 = Color3.fromRGB(170, 85, 255)
+Script2.TextSize = 14.000
+Script2.MouseButton1Down:connect(function()
+	game:GetService("RunService").RenderStepped:connect(function()
+		pcall(function()
+			game:GetService("Players").LocalPlayer.Character.Humanoid.creator:Destroy()
+		end)
+	end)
+
+	game:service'RunService'.RenderStepped:connect(function()
+		pcall(function()
+			game:service'Players'.LocalPlayer.Character.Action:Destroy();
+		end)
+	end)
+
+	game:service'RunService'.RenderStepped:connect(function()
+		pcall(function()
+			game:service'Players'.LocalPlayer.Character.Activity:Destroy();
+		end)
+	end)
+
+	game:service'RunService'.RenderStepped:connect(function()
+		pcall(function()
+			game:service'Players'.LocalPlayer.Character.Killed:Destroy();
+		end)
+	end)
+
+	game:service'RunService'.RenderStepped:connect(function()
+		pcall(function()
+			game:service'Players'.LocalPlayer.Character.Attacking:Destroy();
+		end)
+	end)
+	
+end)
+
+Script3.Name = "Script3"
+Script3.Parent = Test
+Script3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Script3.BorderColor3 = Color3.fromRGB(170, 85, 255)
+Script3.Position = UDim2.new(0.423340917, 0, 0.285714239, 0)
+Script3.Size = UDim2.new(0, 85, 0, 42)
+Script3.Font = Enum.Font.SourceSans
+Script3.Text = "NPC Freeze"
+Script3.TextColor3 = Color3.fromRGB(170, 85, 255)
+Script3.TextSize = 14.000
+Script3.MouseButton1Down:connect(function()
+	----[Walk Up To Any Npc And Push [ To Use]----
+	local plr = game:GetService("Players").LocalPlayer
+	local mouse = plr:GetMouse()
+
+	mouse.KeyDown:connect(function(key)
+		if key == "[" then
+			game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Dragon Crush"])
+			game.Players.LocalPlayer.Character["Dragon Crush"]:Activate() wait(0.1)
+			game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Flip"]:Destroy()
+			wait(0.2)
+			local ts = game:GetService("TeleportService")
+			local p = game:GetService("Players").LocalPlayer
+			ts:Teleport(game.PlaceId, p)
+		end end)
+end)
+
+Script4.Name = "Script4"
+Script4.Parent = Test
+Script4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Script4.BorderColor3 = Color3.fromRGB(170, 85, 255)
+Script4.Position = UDim2.new(0.640732288, 0, 0.285714298, 0)
+Script4.Size = UDim2.new(0, 77, 0, 42)
+Script4.Font = Enum.Font.SourceSans
+Script4.Text = "Infinite Yield"
+Script4.TextColor3 = Color3.fromRGB(170, 85, 255)
+Script4.TextSize = 14.000
+Script4.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Script5.Name = "Script5"
+Script5.Parent = Test
+Script5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Script5.BorderColor3 = Color3.fromRGB(170, 85, 255)
+Script5.Position = UDim2.new(0.837528586, 0, 0.285714328, 0)
+Script5.Size = UDim2.new(0, 71, 0, 42)
+Script5.Font = Enum.Font.SourceSans
+Script5.Text = "Anti Kick"
+Script5.TextColor3 = Color3.fromRGB(170, 85, 255)
+Script5.TextSize = 14.000
+Script5.MouseButton1Down:connect(function()
+	game:WaitForChild("CoreGui")
+	game.CoreGui:WaitForChild("RobloxPromptGui")
+	game.CoreGui.RobloxPromptGui:WaitForChild("promptOverlay")
+	_G.xd = true 
+	while _G.xd do wait()
+		if game:GetService("CoreGui").RobloxPromptGui.promptOverlay:FindFirstChild("ErrorPrompt") then 
+			game:GetService("TeleportService"):Teleport(536102540, LocalPlayer)
+		end
+	end
+end)
+
+Script6.Name = "Script6"
+Script6.Parent = Test
+Script6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Script6.BorderColor3 = Color3.fromRGB(170, 85, 255)
+Script6.Position = UDim2.new(-0.00228832942, 0, 0.508403361, 0)
+Script6.Size = UDim2.new(0, 85, 0, 42)
+Script6.Font = Enum.Font.SourceSans
+Script6.Text = "No level"
+Script6.TextColor3 = Color3.fromRGB(170, 85, 255)
+Script6.TextSize = 14.000
+Script6.MouseButton1Down:connect(function()
+	if not game:IsLoaded() then
+		game.Loaded:Wait()
+	end
+	wait(2)
+	game.Players.LocalPlayer.Character:FindFirstChildOfClass("Model"):Destroy()
+end)
+
+Script7.Name = "Script7"
+Script7.Parent = Test
+Script7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Script7.BorderColor3 = Color3.fromRGB(170, 85, 255)
+Script7.Position = UDim2.new(0.212814659, 0, 0.50840342, 0)
+Script7.Size = UDim2.new(0, 85, 0, 42)
+Script7.Font = Enum.Font.SourceSans
+Script7.Text = "Mid Firework"
+Script7.TextColor3 = Color3.fromRGB(170, 85, 255)
+Script7.TextSize = 14.000
+Script7.MouseButton1Down:connect(function()
+	local mouse = game.Players.LocalPlayer:GetMouse()
+mouse.KeyDown:connect(function(key)
+    if key == "f" then
+    	local lplr = game.Players.LocalPlayer
+        lplr.Character["Bone Crush"].Activator.Crash:Destroy()
+    end
+end)
+end)
+
+Script8.Name = "Script8"
+Script8.Parent = Test
+Script8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Script8.BorderColor3 = Color3.fromRGB(170, 85, 255)
+Script8.Position = UDim2.new(0.423340917, 0, 0.508403301, 0)
+Script8.Size = UDim2.new(0, 85, 0, 42)
+Script8.Font = Enum.Font.SourceSans
+Script8.Text = "OG Kick Script"
+Script8.TextColor3 = Color3.fromRGB(170, 85, 255)
+Script8.TextSize = 14.000
+Script8.MouseButton1Down:connect(function()
+	--Press ">" to Hard Reset.--
+	--Press "k" to Reset.--
+	--Made By Calamity jars brother.--
+	--Editted By Calamity.--
+
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Glitch/Kick Script";
+		Text = "How to use:";
+	})
+
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Keybinds";
+		Text = "> To hard Reset, k to reset, L for glitch.";
+	})
+
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Method";
+		Text = "Select move then press L.";
+	})
+
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Moves";
+		Text = "Dragon Throw to glitch, Dragon Crush to kick.";
+	})
+
+	local Playe = game:GetService("Players").LocalPlayer
+	local Mouse = Playe:GetMouse()
+
+	Mouse.KeyDown:connect(function(Key)
+		Key = Key:lower()
+		if Key == '.' then
+			Playe.Character.Humanoid.Health = 0
+		end
+	end)
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	mouse.KeyDown:connect(function(key)
+		if key == 'k' then
+			local Event = game:GetService("ReplicatedStorage").ResetChar
+			Event:FireServer()
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1473417, 10, 1473297)
+		end
+	end)
+	mouse.KeyDown:connect(function(key)
+		if key == "l" then
+			local plr = game.Players.LocalPlayer
+			game.Workspace.Live[plr.Name]["Dragon Throw"].Activator["Throw"]:Destroy()
+		end
+	end)
+	mouse.KeyDown:connect(function(key)
+		if key == "l" then
+			local plr = game.Players.LocalPlayer
+			game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Flip"]:Destroy()
+			game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Throw"]:Destroy()
+			game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Blocked"]:Destroy()
+			game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["HitDown"]:Destroy()
+			game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["BoneBreak"]:Destroy()
+		end
+	end)
+end)
+
+Script9.Name = "Script9"
+Script9.Parent = Test
+Script9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Script9.BorderColor3 = Color3.fromRGB(170, 85, 255)
+Script9.Position = UDim2.new(0.640732288, 0, 0.508403361, 0)
+Script9.Size = UDim2.new(0, 77, 0, 42)
+Script9.Font = Enum.Font.SourceSans
+Script9.Text = "AntiBug"
+Script9.TextColor3 = Color3.fromRGB(170, 85, 255)
+Script9.TextSize = 14.000
+Script9.MouseButton1Down:connect(function()
+	if game.PlaceId == 2050207304 then
+		wait(55)
+		local plr = game:GetService("Players").LocalPlayer
+		plr.Character.Humanoid.Health = 0
+		game:GetService("TeleportService"):Teleport(3565304751)
+
+	end
+end)
+
+Script10.Name = "Script10"
+Script10.Parent = Test
+Script10.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Script10.BorderColor3 = Color3.fromRGB(170, 85, 255)
+Script10.Position = UDim2.new(0.837528586, 0, 0.508403361, 0)
+Script10.Size = UDim2.new(0, 70, 0, 42)
+Script10.Font = Enum.Font.SourceSans
+Script10.Text = "Tpua"
+Script10.TextColor3 = Color3.fromRGB(170, 85, 255)
+Script10.TextSize = 14.000
+Script10.MouseButton1Down:connect(function()
+	if sethidden then
+		local players = getPlayer(args[1], speaker)
+		for i,v in pairs(players) do
+			local Forces = {}
+			for _,part in pairs(workspace:GetDescendants()) do
+				if Players[v].Character:FindFirstChild('Head') and part:IsA("BasePart" or "UnionOperation" or "Model") and part.Anchored == false and not part:IsDescendantOf(speaker.Character) and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false then
+					for i,c in pairs(part:GetChildren()) do
+						if c:IsA("BodyPosition") or c:IsA("BodyGyro") then
+							c:Destroy()
+						end
+					end
+					local ForceInstance = Instance.new("BodyPosition")
+					ForceInstance.Parent = part
+					ForceInstance.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+					table.insert(Forces, ForceInstance)
+					if not table.find(frozenParts,part) then
+						table.insert(frozenParts,part)
+					end
+				end
+			end
+			if not simRadius then
+				execCmd('simulationradius')
+			end
+			for i,c in pairs(Forces) do
+				c.Position = Players[v].Character.Head.Position
+			end
+		end
+	else
+		notify('Incompatible Exploit','Your exploit does not support this command (missing sethiddenproperty)')
+	end
+end)
+
+TextLabel_2.Parent = Test
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderColor3 = Color3.fromRGB(170, 85, 255)
+TextLabel_2.Position = UDim2.new(0, 0, 0.117647052, 0)
+TextLabel_2.Size = UDim2.new(0, 387, 0, 27)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "NOTE:This OG Kick Script is used for holding players/npcs NOT FOR KICKING!"
+TextLabel_2.TextColor3 = Color3.fromRGB(170, 85, 255)
+TextLabel_2.TextSize = 14.000
+
+TextLabel_3.Parent = Test
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderColor3 = Color3.fromRGB(170, 85, 255)
+TextLabel_3.Position = UDim2.new(0.0251716245, 0, 0.747899175, 0)
+TextLabel_3.Size = UDim2.new(0, 415, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "More scripts/GUI's coming soon!"
+TextLabel_3.TextColor3 = Color3.fromRGB(170, 85, 255)
+TextLabel_3.TextSize = 14.000
+
+TextButton.Parent = ScreenGui
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.Position = UDim2.new(0, 0, 0.466830462, 0)
+TextButton.Size = UDim2.new(0, 104, 0, 32)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Open"
+TextButton.TextColor3 = Color3.fromRGB(170, 85, 255)
+TextButton.TextSize = 14.000
+
+Frame.Parent = TextButton
+Frame.BackgroundColor3 = Color3.fromRGB(170, 85, 255)
+Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Frame.Position = UDim2.new(-0.00961527415, 0, -0.125, 0)
+Frame.Size = UDim2.new(0, 104, 0, 4)
+
+-- Scripts:
+
+local function FJZMRPH_fake_script() -- XButton.LocalScript 
+	local script = Instance.new('LocalScript', XButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+end
+coroutine.wrap(FJZMRPH_fake_script)()
+local function LRLJNZ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local frame = script.Parent.Parent.Test
+	local open = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if frame.Visible == false then
+			frame.Visible = true
+		end
+	end)
+	
+end
+coroutine.wrap(LRLJNZ_fake_script)()

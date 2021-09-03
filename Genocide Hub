@@ -1,6 +1,6 @@
 game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Genocide Hub";
-	Text = "By Jar#0005 & Shonen#0004";
+	Text = "By Jammy#0004 & Shonen#0004";
 })
 
 wait(2)
@@ -9,7 +9,7 @@ wait(2)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/IreXion-UI-Library/main/IreXion%20UI%20Library"))()
 
 local Gui = Library:AddGui({
-Title = {"Genocide", "Jar#0005 & Shonen#0004"},
+Title = {"Genocide", "Jammy#0004 & Shonen#0004"},
 ThemeColor = Color3.fromRGB(255,0,191),
 ToggleKey = Enum.KeyCode.RightShift,
 })

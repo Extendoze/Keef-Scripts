@@ -9,7 +9,7 @@ wait(2)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/IreXion-UI-Library/main/IreXion%20UI%20Library"))()
 
 local Gui = Library:AddGui({
-Title = {"Genocide", "Jammy#0004 & Shonen#0004"},
+Title = {"Genocide", "iid1zi#0001 & Shonen#0004"},
 ThemeColor = Color3.fromRGB(255,0,191),
 ToggleKey = Enum.KeyCode.RightShift,
 })
@@ -27,7 +27,7 @@ local Misc = Tab:AddCategory("Misc")
 local Button = Misc:AddButton("Anti Afk", function()
 game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Anti Afk no Jutsu";
-	Text = "Created by: Jar#0004";
+	Text = "Created by: iid1zi#0001";
 })
 
 wait(1)

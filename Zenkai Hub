@@ -223,6 +223,7 @@ function x()
   game:GetService("StarterGui"):SetCore("SendNotification", {
     
     _G.Key = 'j'
+})
 
 if not game:IsLoaded() then    
 game.Loaded:Wait()
@@ -271,6 +272,7 @@ mouse.KeyDown:connect(function(key)
 respawnx()
 end
 end)
+end
 end
 end)
 

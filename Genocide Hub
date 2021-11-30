@@ -1,6 +1,6 @@
 game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Genocide Hub";
-	Text = "By iid1zi#0001 & Shonen#0004";
+	Text = "By Zenkai#0794 & xeno#7477";
 })
 
 wait(2)
@@ -9,7 +9,7 @@ wait(2)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/IreXion-UI-Library/main/IreXion%20UI%20Library"))()
 
 local Gui = Library:AddGui({
-Title = {"Genocide", "iid1zi#0001 & Shonen#0004"},
+Title = {"Genocide", "Zenkai#0794 & xeno#7477"},
 ThemeColor = Color3.fromRGB(255,0,191),
 ToggleKey = Enum.KeyCode.RightShift,
 })
@@ -27,7 +27,7 @@ local Misc = Tab:AddCategory("Misc")
 local Button = Misc:AddButton("Anti Afk", function()
 game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Anti Afk no Jutsu";
-	Text = "Created by: iid1zi#0001";
+	Text = "Created by: Zenkai#0794";
 })
 
 wait(1)
@@ -73,7 +73,7 @@ local Button = Main:AddButton("Top Reset", function()
 --If You See this You Suck but its made by ismysenpaii#8001 and Sho
 game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Respawn no Jutsu";
-	Text = "Created by: Jar";
+	Text = "Created by: Zenkai#0794";
 })
 
 game:GetService("StarterGui"):SetCore("SendNotification", {

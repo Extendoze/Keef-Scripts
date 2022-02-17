@@ -1,0 +1,117 @@
+local XanaxUILib = loadstring(game:HttpGet("https://pastebin.com/raw/XZz3Ytbu"))()
+local Ui = XanaxUILib:CreateWindow("FS Hub")
+local Info = Ui:CreateSection("Info")
+local ExampleSection = Ui:CreateSection("Main")
+
+Info:CreateLabel("Keef#0001")
+Info:CreateLabel("FS Hub")
+Info:CreateButton("Destroy UI", function() XanaxUILib.functions:DestroyGUI() end)
+
+ExampleSection:CreateLabel("FS TP Features")
+ExampleSection:CreateButton("South City", function() print("U are at South city bro")
+    local tweenservice = game:GetService("TweenService")
+
+local player = game:GetService("Players").LocalPlayer
+local char = player.Character
+
+local tweeninfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad)
+local cframe = {CFrame = CFrame.new(-473, 27, -6406)}
+tweenservice:Create(char.HumanoidRootPart, tweeninfo, cframe):Play()
+    end)
+ExampleSection:CreateButton("West City", function() print("u are at west city bro")
+    local tweenservice = game:GetService("TweenService")
+
+local player = game:GetService("Players").LocalPlayer
+local char = player.Character
+
+local tweeninfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad)
+local cframe = {CFrame = CFrame.new(-578, 22, -2878)}
+tweenservice:Create(char.HumanoidRootPart, tweeninfo, cframe):Play()
+    end)
+ExampleSection:CreateButton("Central City", function() print("u are at central city bro") 
+    local tweenservice = game:GetService("TweenService")
+
+local player = game:GetService("Players").LocalPlayer
+local char = player.Character
+
+local tweeninfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad)
+local cframe = {CFrame = CFrame.new(-3438, 165, -1705)}
+tweenservice:Create(char.HumanoidRootPart, tweeninfo, cframe):Play()
+    end)
+ExampleSection:CreateButton("Spaceship Lvl 200 Req", function() print("u are at the Spaceship") 
+    local tweenservice = game:GetService("TweenService")
+
+local player = game:GetService("Players").LocalPlayer
+local char = player.Character
+
+local tweeninfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad)
+local cframe = {CFrame = CFrame.new(-1188, 23, -2924)}
+tweenservice:Create(char.HumanoidRootPart, tweeninfo, cframe):Play()
+    end)
+ExampleSection:CreateButton("TimeMachine | Lvl 300 Req", function() print("u are at the TimeMachine")
+    local tweenservice = game:GetService("TweenService")
+
+local player = game:GetService("Players").LocalPlayer
+local char = player.Character
+
+local tweeninfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad)
+local cframe = {CFrame = CFrame.new(788, 23, -1804)}
+tweenservice:Create(char.HumanoidRootPart, tweeninfo, cframe):Play()
+
+end)
+ExampleSection:CreateButton("Namek | Lvl 100 Req", function() print("u are at the Namekian Spaceship")
+    local tweenservice = game:GetService("TweenService")
+
+local player = game:GetService("Players").LocalPlayer
+local char = player.Character
+
+local tweeninfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad)
+local cframe = {CFrame = CFrame.new(1438, 94, 3200)}
+tweenservice:Create(char.HumanoidRootPart, tweeninfo, cframe):Play()
+end)
+ExampleSection:CreateButton("Top", function() print("u at T.o.p Tiles bro")
+    local tweenservice = game:GetService("TweenService")
+
+local player = game:GetService("Players").LocalPlayer
+local char = player.Character
+
+local tweeninfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad)
+local cframe = {CFrame = CFrame.new(2511, 3945, -2032)}
+tweenservice:Create(char.HumanoidRootPart, tweeninfo, cframe):Play()
+    end)
+    ExampleSection:CreateButton("Hard Top", function() print("u at hard top tiles bro")
+     local tweenservice = game:GetService("TweenService")
+
+local player = game:GetService("Players").LocalPlayer
+local char = player.Character
+
+local tweeninfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad)
+local cframe = {CFrame = CFrame.new(2508, 3945, -2521)}
+tweenservice:Create(char.HumanoidRootPart, tweeninfo, cframe):Play()   
+    end)
+    
+    ExampleSection:CreateButton("Broly Pad", function() print("u at the Broly Pad")
+    local tweenservice = game:GetService("TweenService")
+
+local player = game:GetService("Players").LocalPlayer
+local char = player.Character
+
+local tweeninfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad)
+local cframe = {CFrame = CFrame.new(2734, 3945, -2271)}
+tweenservice:Create(char.HumanoidRootPart, tweeninfo, cframe):Play()
+    end)
+ExampleSection:CreateSlider("Walkspeed", "WalkSpeed",1, 200, 16, function(value)
+    game.Player.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+end)
+ExampleSection:CreateDropdown("Gender", "Default Text", "GenderFlag", {"Gay", "Lesbian", "Bi", " ", "White"}, function(chosenOption)
+   if chosenOption == "Gay" then
+       local m = Instance.new("Message")
+       m.Parent = game.CoreGui
+       m.Text = "Allahu Akbar Sweetie"
+       wait(2)
+       Instance.new("Explosion", game.Players.LocalPlayer.Character.HumanoidRootPart)
+       m:Destroy()
+       return
+   end
+   print("Moving sussy")
+   end)

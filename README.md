@@ -1,4 +1,4 @@
-# RukaisScripts
+# Scripts
 All these Scripts are made by me
-if u want my discord its +𝙎𝙝𝙤#8703
+if u want my discord its Keef#0001
 numbers change a lot

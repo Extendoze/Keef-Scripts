@@ -1,6 +1,6 @@
 game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Genocide Hub";
-	Text = "By Zenkai#0794 & xeno#7477";
+	Text = "By Keef#0001 & Shonen#0001";
 })
 
 wait(2)

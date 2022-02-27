@@ -1,14 +1,17 @@
 local XanaxUILib = loadstring(game:HttpGet("https://pastebin.com/raw/XZz3Ytbu"))()
-local Ui = XanaxUILib:CreateWindow("FS Hub")
-local Info = Ui:CreateSection("Info")
+local Ui = XanaxUILib:CreateWindow("Fs Hub")
 local ExampleSection = Ui:CreateSection("Main")
-
+local EarthTP = Ui:CreateSection("Earth Locations")
+local Info = Ui:CreateSection("Info")
+ 
 Info:CreateLabel("Keef#0001")
 Info:CreateLabel("FS Hub")
 Info:CreateButton("Destroy UI", function() XanaxUILib.functions:DestroyGUI() end)
 
+
+EarthTP:CreateLabel("Earth Locations")
 ExampleSection:CreateLabel("FS TP Features")
-ExampleSection:CreateButton("South City", function() print("")
+EarthTP:CreateButton("South City", function() print("")
     local tweenservice = game:GetService("TweenService")
 
 local player = game:GetService("Players").LocalPlayer
@@ -18,7 +21,7 @@ local tweeninfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad)
 local cframe = {CFrame = CFrame.new(-473, 27, -6406)}
 tweenservice:Create(char.HumanoidRootPart, tweeninfo, cframe):Play()
     end)
-ExampleSection:CreateButton("West City", function() print("")
+EarthTP:CreateButton("West City", function() print("")
     local tweenservice = game:GetService("TweenService")
 
 local player = game:GetService("Players").LocalPlayer
@@ -28,7 +31,7 @@ local tweeninfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad)
 local cframe = {CFrame = CFrame.new(-578, 22, -2878)}
 tweenservice:Create(char.HumanoidRootPart, tweeninfo, cframe):Play()
     end)
-ExampleSection:CreateButton("Central City", function() print("") 
+EarthTP:CreateButton("Central City", function() print("") 
     local tweenservice = game:GetService("TweenService")
 
 local player = game:GetService("Players").LocalPlayer
@@ -37,40 +40,36 @@ local char = player.Character
 local tweeninfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad)
 local cframe = {CFrame = CFrame.new(-3438, 165, -1705)}
 tweenservice:Create(char.HumanoidRootPart, tweeninfo, cframe):Play()
+end)
+
+ExampleSection:CreateButton("SW | 350 Req", function() print("")
+    game:GetService("TeleportService"):Teleport(2046990924, game.Players.LocalPlayer)
+
     end)
-ExampleSection:CreateButton("Spaceship Lvl 200 Req", function() print("") 
-    local tweenservice = game:GetService("TweenService")
 
-local player = game:GetService("Players").LocalPlayer
-local char = player.Character
+ExampleSection:CreateButton("Queue", function() print("")
+    game:GetService("TeleportService"):Teleport(3565304751, game.Players.LocalPlayer)
 
-local tweeninfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad)
-local cframe = {CFrame = CFrame.new(-1188, 23, -2924)}
-tweenservice:Create(char.HumanoidRootPart, tweeninfo, cframe):Play()
+end)
+
+ExampleSection:CreateButton("Earth", function() print("") 
+   
+game:GetService("TeleportService"):Teleport(536102540, game.Players.LocalPlayer)
+end)
+
+
+ExampleSection:CreateButton("Space | lvl 200 Req", function() print("") 
+game:GetService("TeleportService"):Teleport(478132461, game.Players.LocalPlayer)
+
     end)
-ExampleSection:CreateButton("TimeMachine | Lvl 300 Req", function() print("")
-    local tweenservice = game:GetService("TweenService")
-
-local player = game:GetService("Players").LocalPlayer
-local char = player.Character
-
-local tweeninfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad)
-local cframe = {CFrame = CFrame.new(788, 23, -1804)}
-tweenservice:Create(char.HumanoidRootPart, tweeninfo, cframe):Play()
-
+ExampleSection:CreateButton("Future | Lvl 300 Req", function() print("")
+ game:GetService("TeleportService"):Teleport(569994010, game.Players.LocalPlayer)
 end)
 
 ExampleSection:CreateButton("Namek | Lvl 100 Req", function() print("")
-    local tweenservice = game:GetService("TweenService")
-
-local player = game:GetService("Players").LocalPlayer
-local char = player.Character
-
-local tweeninfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad)
-local cframe = {CFrame = CFrame.new(1438, 94, 3200)}
-tweenservice:Create(char.HumanoidRootPart, tweeninfo, cframe):Play()
+game:GetService("TeleportService"):Teleport(882399924, game.Players.LocalPlayer)
 end)
-ExampleSection:CreateButton("Top", function() print("")
+EarthTP:CreateButton("Top", function() print("")
     local tweenservice = game:GetService("TweenService")
 
 local player = game:GetService("Players").LocalPlayer
@@ -80,7 +79,7 @@ local tweeninfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad)
 local cframe = {CFrame = CFrame.new(2511, 3945, -2032)}
 tweenservice:Create(char.HumanoidRootPart, tweeninfo, cframe):Play()
     end)
-    ExampleSection:CreateButton("Hard Top", function() print("")
+    EarthTP:CreateButton("Hard Top", function() print("")
      local tweenservice = game:GetService("TweenService")
 
 local player = game:GetService("Players").LocalPlayer
@@ -91,7 +90,7 @@ local cframe = {CFrame = CFrame.new(2508, 3945, -2521)}
 tweenservice:Create(char.HumanoidRootPart, tweeninfo, cframe):Play()   
     end)
     
-    ExampleSection:CreateButton("Broly Pad", function() print("")
+    EarthTP:CreateButton("Broly Pad", function() print("")
     local tweenservice = game:GetService("TweenService")
 
 local player = game:GetService("Players").LocalPlayer
@@ -101,16 +100,3 @@ local tweeninfo = TweenInfo.new(1.5, Enum.EasingStyle.Quad)
 local cframe = {CFrame = CFrame.new(2734, 3945, -2271)}
 tweenservice:Create(char.HumanoidRootPart, tweeninfo, cframe):Play()
     end)
-ExampleSection:CreateSlider("Walkspeed", "WalkSpeed",16, 150, 0, function(value)
- if v > 16 then
-		_G.WSEnabled = true
-		_G.WalkSpeed = v
-	else
-		_G.WSEnabled = false
-		end
-end)
-game["Run Service"].RenderStepped:Connect(function()
-	if _G.WSEnabled == true then
-		game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").WalkSpeed = _G.WalkSpeed
-	end
-	end)

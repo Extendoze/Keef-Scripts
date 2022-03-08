@@ -45,6 +45,10 @@ end)
 ExampleSection:CreateButton("SW | 350 Req", function() print("")
     game:GetService("TeleportService"):Teleport(2046990924, game.Players.LocalPlayer)
 
+end)
+ExampleSection:CreateButton("Zaros | 600 Req", function() print("")
+  game:GetService("TeleportService"):Teleport(2651456105, game.Players.LocalPlayer)
+
     end)
 
 ExampleSection:CreateButton("Queue", function() print("")
@@ -56,6 +60,7 @@ ExampleSection:CreateButton("Earth", function() print("")
    
 game:GetService("TeleportService"):Teleport(536102540, game.Players.LocalPlayer)
 end)
+
 
 
 ExampleSection:CreateButton("Space | lvl 200 Req", function() print("") 

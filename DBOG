@@ -3,7 +3,7 @@ repeat task.wait() until game:IsLoaded();
 wait(2.5)
 game:GetService("StarterGui"):SetCore("SendNotification",{
 Title = "Dbog DB Farm";
-Text = "Maski#1000";
+Text = "Marski#1000";
 })
 --Re-Execcute To Stop Auto Farm.
 getgenv().DBOGFarm = not getgenv().DBOGFarm

@@ -13,13 +13,13 @@ local descendants = Workspace.Map.Grass:GetDescendants()
 for index, descendant in pairs(descendants) do
 if descendant.Name == "Collision" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(descendant.Position)
-wait(1)
+wait(1.5)
 game:GetService("ReplicatedStorage").Events.Update:FireServer()
 end
 end
 end
 end)
-wait(1)
+wait(1.5)
 local PlaceID = game.PlaceId
 local AllIDs = {}
 local foundAnything = ""
@@ -72,7 +72,7 @@ function TPReturner()
                     wait()
                     game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
                 end)
-                wait(2)
+                wait(3)
             end
         end
     end

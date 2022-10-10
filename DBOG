@@ -5,7 +5,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 Title = "Dbog DB Farm";
 Text = "Marski#1000";
 })
---Re-Execcute To Stop Auto Farm.
+
 getgenv().DBOGFarm = not getgenv().DBOGFarm
 game:GetService("RunService").Stepped:Connect(function()
 if getgenv().DBOGFarm then
@@ -19,7 +19,7 @@ end
 end
 end
 end)
-wait(2)
+wait(1)
 local PlaceID = game.PlaceId
 local AllIDs = {}
 local foundAnything = ""
@@ -72,7 +72,7 @@ function TPReturner()
                     wait()
                     game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
                 end)
-                wait(4)
+                wait(2)
             end
         end
     end

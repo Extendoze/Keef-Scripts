@@ -1,6 +1,6 @@
 
 repeat task.wait() until game:IsLoaded();
-wait(2.5)
+wait()
 game:GetService("StarterGui"):SetCore("SendNotification",{
 Title = "Dbog DB Farm";
 Text = "Marski#1000";

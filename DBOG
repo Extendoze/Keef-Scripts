@@ -3,7 +3,8 @@ repeat task.wait() until game:IsLoaded();
 wait()
 game:GetService("StarterGui"):SetCore("SendNotification",{
 Title = "Dbog DB Farm";
-Text = "Tre#8719";
+Text = "low#2442
+";
 })
 
 getgenv().DBOGFarm = not getgenv().DBOGFarm

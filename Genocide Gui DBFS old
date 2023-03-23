@@ -1,5 +1,5 @@
 -- Genocide GUI | Made By ryusei#4587 & 700#6512
--- Version: 3.2
+-- Version: 4.0
 
 -- Instances:
 game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -10,7 +10,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 wait(1)
 game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "More features coming soon:";
-	Text = "Sussy baka";
+	Text = "Version 4.0;
 })
 wait(1)
 

@@ -1,10 +1,10 @@
--- Genocide GUI | Made By Lelouch#0990 & Sho#0006
+-- Genocide GUI | Made By ryusei#4587 & 700#6512
 -- Version: 3.2
 
 -- Instances:
 game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Genocide Gui";
-	Text = "Created by: Shonen#0004 & Jar#0005";
+	Text = "Created by: 700#6512 & ryusei#4587 aka Horny Demon";
 })
 
 wait(1)

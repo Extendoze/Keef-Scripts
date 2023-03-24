@@ -4,7 +4,7 @@
 -- Instances:
 game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Glo Hub";
-	Text = "Created by: 700#6512 & ryusei#4587 aka Horny Demon";
+	Text = "Created by: 700#6512 & ryusei#4587";
 })
 
 wait(1)
@@ -61,7 +61,7 @@ TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.Position = UDim2.new(-9.92500019, 0, -0.56410259, 0)
 TextLabel.Size = UDim2.new(0, 437, 0, 22)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Genocide GUI | Made By Shonen#0004 & Jar#0005"
+TextLabel.Text = "Glo Hub | Made By 700#6512 & ryusei#4587 aka TheHornyDemon"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 14.000
 

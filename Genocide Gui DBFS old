@@ -3,7 +3,7 @@
 
 -- Instances:
 game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "Genocide Gui";
+	Title = "Glo Hub";
 	Text = "Created by: 700#6512 & ryusei#4587 aka Horny Demon";
 })
 

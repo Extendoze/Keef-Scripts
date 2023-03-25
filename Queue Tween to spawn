@@ -1,0 +1,15 @@
+wait(.50)
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "Queue";
+	Text = "Rise up and become the Elden Lord";
+})
+
+local lplr = game:GetService("Players").LocalPlayer
+local mouse = lplr:GetMouse()
+
+mouse.KeyDown:connect(function(key)
+    if key == "j" then
+        game:GetService("TweenService"):Create(lplr.Character.HumanoidRootPart, TweenInfo.new(0.3, Enum.EasingStyle.Linear), {CFrame = CFrame.new(-39, 239, -36)}):Play()
+    end
+    end)
